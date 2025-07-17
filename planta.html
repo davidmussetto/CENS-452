@@ -2,44 +2,162 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>1° Gestión - Planta Depuradora de Brandsen - CENS 452</title>
+  <title>1° Año - Planta Depuradora de Brandsen - CENS 452</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <div class="container py-4">
-    <h2 class="text-center mb-4">1° Gestión - Planta Depuradora de Brandsen</h2>
+<audio id="bg-music" autoplay loop muted>
+  <source src="media/musica.mp3" type="audio/mp3">
+  Tu navegador no soporta audio.
+</audio>
 
-    <div id="carousel1" class="carousel slide mb-5" data-bs-ride="carousel">
+<button onclick="iniciarMusica()" class="btn btn-primary mb-3">▶️ Iniciar música</button>
+
+<script>
+  function iniciarMusica() {
+    const audio = document.getElementById("bg-music");
+    audio.muted = false;
+    audio.volume = 0.5;
+    audio.play();
+  }
+</script>
+
+
+  <div class="container py-4">
+    <h2 class="text-center mb-4">1° Año - Planta Depuradora de Brandsen</h2>
+    <h2 class="text-center mb-4">Contexto Problematizador:</h2> 
+	<h4 class="text-center mb-4" style="text-color=blue;">Ambiente y salud: conflictos en la construcción de un desarrollo sustentable.</h4>
+    <h2 class="text-center mb-4">Situación Problemática:</h2> 
+	<h4 class="text-center mb-4">¿Cómo afecta el deficiente tratamiento de residuos cloacales y la falta de ampliación de la planta de tratamiento en Brandsen al ambiente y la salud de la comunidad?</h4>
+
+    <!-- Carrusel solo con imágenes -->
+    <div id="carousel2" class="carousel slide mb-5" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="media/planta1.jpg" class="d-block w-100" alt="Imagen relacionada">
+          <img src="media/cloaca1.png" class="d-block w-100" alt="Planta Depuradora de Brandsen">
         </div>
         <div class="carousel-item">
-          <video class="d-block w-100" controls>
-            <source src="media/planta_video.mp4" type="video/mp4">
-            Tu navegador no soporta video.
-          </video>
+          <img src="media/cloaca2.png" class="d-block w-100" alt="Planta Depuradora de Brandsen">
         </div>
         <div class="carousel-item">
-          <audio class="d-block w-100" controls>
-            <source src="media/planta_audio.mp3" type="audio/mp3">
-            Tu navegador no soporta audio.
-          </audio>
+          <img src="media/cloaca3.png" class="d-block w-100" alt="Planta Depuradora de Brandsen">
+        </div>
+		<div class="carousel-item">
+          <img src="media/cloaca4.png" class="d-block w-100" alt="Planta Depuradora de Brandsen">
+        </div>
+		<div class="carousel-item">
+          <img src="media/cloaca5.png" class="d-block w-100" alt="Planta Depuradora de Brandsen">
+        </div>
+		<div class="carousel-item">
+          <img src="media/planta1.jpeg" class="d-block w-100" alt="Planta Depuradora de Brandsen">
+        </div>
+		<div class="carousel-item">
+          <img src="media/planta2.jpeg" class="d-block w-100" alt="Planta Depuradora de Brandsen">
+        </div>
+		<div class="carousel-item">
+          <img src="media/planta3.jpeg" class="d-block w-100" alt="Planta Depuradora de Brandsen">
+        </div>
+		<div class="carousel-item">
+          <img src="media/planta4.jpeg" class="d-block w-100" alt="Planta Depuradora de Brandsen">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
 
+<!-- Sección de Ubicacion -->
+    <section class="mb-5">
+      <h3>Ubicacion:</h3>
+      <p>Manuel Belgrano 935, Coronel Brandsen, Provincia de Buenos Aires</p>
+      
+        <div class="col-md-6 mb-3">
+          <img src="media/ubicacionPlanta.png" class="img-fluid rounded" alt="Ubicacion Brandsen - realizada por alumnos">
+        </div>
+    </section>
+
+    <!-- Planta y definiciones -->
+    <section class="mb-5">
+      <h3> Plantas de tratamiento de aguas residuales:</h3>
+      <ul>
+        <li><strong>Definición:</strong>Las aguas residuales o aguas negras son aquellas cuya calidad se ve afectada por la actividad humana, y se clasifican en urbanas, domésticas e industriales, según su procedencia. </li>
+        <li><strong>Función:</strong> Las plantas de tratamiento de aguas residuales o EDAR (Estación Depuradora de Aguas Residuales) se encargan de recoger las aguas procedentes de una población o sector industrial y eliminar sus sustancias contaminantes. </li>
+        <li><strong>Objetivo :</strong> Devolver este recurso al ciclo del agua, ya sea mediante su vertido a los cauces de agua o bien para su reutilización en actividades como la agricultura.</li>
+      </ul>
+    </section>
+
+    <!-- Eventos -->
+    <section class="mb-5">
+      <h3> Procesos y etapas:</h3>
+      <ul>
+        <li><strong>pre tratamiento:</strong>  es la etapa que da comienzo a la depuración de las aguas residuales y sirve para prepararlas para su purificación durante las siguientes etapas. Así, el agua se libera de objetos que puedan dañar la instalación o los equipos que se usarán a lo largo del proceso de depuración </li>
+        <li><strong>Tratamiento primario: </strong> el objetivo de esta etapa es eliminar una porción de los sólidos suspendidos. Para ello, el agua queda retenida durante 1 a 2 horas en decantadores para que la gravedad ayude a separar esas partículas. Otros beneficios de este proceso son la homogeneización de caudal y la eliminación de materia orgánica asociada a los sólidos suspendidos.</li>
+        <li><strong>Tratamiento secundario:</strong>  Es un tratamiento principalmente biológico, se suele emplear la ayuda de bacterias y microorganismos para degradar y eliminar la materia orgánica y los diferentes nutrientes que contiene el agua</li>
+        <li><strong>Tratamiento terciario o químico:</strong>  se busca aumentar la calidad final del agua para poder devolverla al medio ambiente </li>
+      </ul>
+    </section>
+
+	<!-- Bandera -->
+    <section class="mb-5">
+      <h3>Planta Depuradora de Brandsen</h3>
+      <p>la planta de tratamiento de aguas residuales utiliza exclusivamente el método biológico, empleando bacterias para depurar el agua. Actualmente, opera al 70% de su capacidad durante las 24 horas del día, los 365 días del año</p>
+      <p> Para alcanzar el funcionamiento óptimo del 100%, se requieren 5 bombas en operación. En este momento, 2 bombas nuevas están en funcionamiento, mientras que 3 bombas están en reparación. </p>
+	  <p> es importante destacar que la planta depuradora juega un papel crucial en el  tratamiento y manejo de residuos líquidos en la región. Su capacidad reducida puede tener implicaciones a largo plazo en la calidad del agua y el medio ambiente</p>
+	  <p> El agua tratada es posteriormente vertida en el canal, que desemboca en el  río Samborombón. Todos los residuos sólidos son tratados en la planta mediante el proceso biológico con bacterias. </p> 
+
+    <!-- Audios con descripciones -->
+    <div class="mb-4">
+      <h4>Audios</h4>
+      <p><strong>Planta Depuradora, posibles enfermedades:</strong></p>
+      <audio class="w-100 mb-3" controls>
+        <source src="media/Personas con Problem.mp3" type="audio/mp3">
+        Tu navegador no soporta audio.
+      </audio>
+
+      <p><strong>Planta Depuradora, enfermedades psicologicas:</strong></p>
+      <audio class="w-100 mb-3" controls>
+        <source src="media/Efectos Psicologicos.mp3" type="audio/mp3">
+        Tu navegador no soporta audio.
+      </audio>
+	  
+      <p><strong>Planta Depuradora, posibles problemas que puede causar:</strong></p>
+      <audio class="w-100 mb-3" controls>
+        <source src="media/Problemas que puede .mp3" type="audio/mp3">
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+	  
+	
+      <!-- trabajos de la planta -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="media/maqueta.jpeg" class="img-fluid rounded" alt="maqueta planta - realizada por alumnos">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="media/planta1.jpeg" class="img-fluid rounded" alt="Planta depuradora de Brandsen">
+        </div>
+       <div class="col-md-6 mb-3">
+          <img src="media/planta2.jpeg" class="img-fluid rounded" alt="Planta depuradora de Brandsen">
+        </div>
+       <div class="col-md-6 mb-3">
+          <img src="media/planta3.jpeg" class="img-fluid rounded" alt="Planta depuradora de Brandsen">
+        </div>
+       <div class="col-md-6 mb-3">
+          <img src="media/planta4.jpeg" class="img-fluid rounded" alt="Planta depuradora de Brandsen">
+        </div>
+      </div>
+    </section>
+	
+	
     <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
